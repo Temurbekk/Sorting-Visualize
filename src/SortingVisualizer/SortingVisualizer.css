@@ -6,7 +6,10 @@
   src: local('Roboto Mono Light'), local('RobotoMono-Light'), url(https://fonts.gstatic.com/s/robotomono/v7/L0xkDF4xlVMF-BfR8bXMIjDgiWqxf7-pAVU_.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
+body{
+  background: rgb(0,0,0);
+background: linear-gradient(187deg, rgba(0,0,0,1) 20%, rgba(255,1,1,1) 54%, rgba(0,0,0,1) 98%);
+}
 
 .d-flex{
 	display: flex;
@@ -14,11 +17,6 @@
 
 }
 .array-container {
-    /*position: absolute;
-    left: 100px;
-    bottom: 0;
-    top: 100px; */
-
     overflow-y: scroll;
     justify-content: center;
   }
@@ -28,7 +26,7 @@
   	flex-grow: 1;
     width: 2px;
     margin: 0 1px;
-	border-radius: 4px;
+    border-radius: 4px;
   }
 
 
@@ -39,7 +37,8 @@ div.nav-bar {
 	justify-content: center;
 
 }
-  button {  	
+  button {
+    font-size: 100%;  	
   	border-radius: 15px;
   	font-family: 'Roboto Mono', monospace;
   	margin: 5px 15px;
@@ -49,8 +48,6 @@ div.nav-bar {
   button:hover{
   	cursor: pointer;
   	color: red;
-  	font-size: 100%;
- 
   }
 
   button:focus{
